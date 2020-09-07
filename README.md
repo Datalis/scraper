@@ -1,7 +1,13 @@
-# Scrapers
+# Headless chrome
 
-On the main branch *master* they are a base scraper to scan websites.
-Each other branch, is an scraper with specific purpose.
+wip
+- add to dependencies install chrome driver
+linux.deb
+	sudo apt install chromium-chromedriver
+macos 
+	brew install chromedriver
+	
+more driver docs here https://selenium-python.readthedocs.io/installation.html#drivers
 
 
 
@@ -11,6 +17,8 @@ Implemented in python.
 As Python is cross-platform, it can be run on Windows, Linux-based or Mac systems. The only thing you need to have installed is `python3`.
 
 ## Dependencies
+
+
 
 The dependencies are in the `requirements.txt` file.
 
@@ -25,4 +33,4 @@ pip install -r requirements.txt
 
 ## How to use
 
-Define your own scrapers by inherit from the `Scraper` class, it provide some useful functionalities.
+wip
