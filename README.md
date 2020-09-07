@@ -1,9 +1,24 @@
-# Scrapers
+# Generate file extensions db
 
-On the main branch *master* they are a base scraper to scan websites.
-Each other branch, is an scraper with specific purpose.
+## Overview
 
+This generates a json that contains all the file extensions shown on the site [fileinfo.com](https://fileinfo.com) by scanning it.
 
+The result `.json` look like this
+
+```json
+[
+    {
+        "filetype": ".!bt",
+        "developer": "BitTorrent",
+        "category": "Misc Files",
+        "format": "Text and Binary"
+    },
+    ...
+]
+```
+
+[TOC]
 
 ## Platform
 
@@ -25,4 +40,10 @@ pip install -r requirements.txt
 
 ## How to use
 
-Define your own scrapers by inherit from the `Scraper` class, it provide some useful functionalities.
+If the only thing that you want to do is generate the filetype database, you have to open a **console** from the folder project and make
+
+```bash
+python3 main.py
+```
+
+assuming that you have the `python` installation in the PATH environment variable, if not, replace `python3` for the path of the python executable.
