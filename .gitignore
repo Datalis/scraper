@@ -122,3 +122,8 @@ crashlytics-build.properties
 pyvenv.cfg
 pip-selfcheck.json
 venv
+
+
+# ---> shopfetcher project
+shops.json.temp
+shops.json

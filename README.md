@@ -1,7 +1,30 @@
-# Scrapers
+# Cuban Shop Fetcher
 
-On the main branch *master* they are a base scraper to scan websites.
-Each other branch, is an scraper with specific purpose.
+Send request to the [api](http://dhayservice.cimex.com.cu:1703/api/) of http://dondehay.cimex.com.cu to fetch information related to the Cuban shops of the state.
+
+The result is store in the json file `shops.json` in the project folder. 
+
+It create a temp file `shops.json.temp` to save data partially to construct the final json.
+Do **not** delete it manually, the application will do it when it is not longer needed.
+
+## Json structure
+
+The json is a list of objects, each one represent the data associate to one shop. 
+
+```json
+[
+    {
+        "name": "nombre",
+        "x_cord": "1.0",
+        "y_cord": "-3.0",
+        "municipality": "municipio",
+        "province": "provincia",
+        "address": "direccion",
+        "mlc": false
+    },
+    ...
+]
+```
 
 
 
@@ -12,17 +35,18 @@ As Python is cross-platform, it can be run on Windows, Linux-based or Mac system
 
 ## Dependencies
 
-The dependencies are in the `requirements.txt` file.
-
-If you use `virtualenv` you need to create/activate it first.
-Them, you can install the dependencies using `pip` as follows:
+Require `urllib3`
+You can install it using `pip` as follows:
 
 ```bash
-pip install -r requirements.txt
+pip install urllib3
 ```
 
 > NOTE: We recommend use `venv` to your python projects.
 
 ## How to use
 
-Define your own scrapers by inherit from the `Scraper` class, it provide some useful functionalities.
+```shell
+python3 main.py
+```
+
