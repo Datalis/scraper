@@ -93,8 +93,9 @@ class ShopFectcher:
 
                     shops.append({
                         "name": details_object.get("nombre"),
-                        "x_cord": details_object.get("x_coordenada"),
-                        "y_cord": details_object.get("y_coordenada"),
+                        "x_coord": details_object.get("x_coordenada"),
+                        "y_coord": details_object.get("y_coordenada"),  
+                        "opening_hours": details_object.get("horario"),
                         "municipality": details_object.get("municipio"),
                         "province": details_object.get("provincia"),
                         "address": details_object.get("direccion"),
