@@ -58,7 +58,10 @@ class ShopFectcher:
                 if product_id:
                     shops = self.get_shop_data(product_id)
                     if shops:
-                        self.update_shops(shops)
+                        try:
+                            self.update_shops(shops)
+                        except:
+                            pass
 
             products_next_page_url = products_data.get("next_page_url")
             if products_next_page_url:
