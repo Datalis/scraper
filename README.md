@@ -15,8 +15,9 @@ The json is a list of objects, each one represent the data associate to one shop
 [
     {
         "name": "nombre",
-        "x_cord": "1.0",
-        "y_cord": "-3.0",
+        "x_coord": "1.0",
+        "y_coord": "-3.0",
+        "opening_hours": "Lun, Mar, Vie",
         "municipality": "municipio",
         "province": "provincia",
         "address": "direccion",
